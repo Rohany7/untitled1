@@ -9,4 +9,8 @@ public class LoginTest extends BaseTest{
         LoginPage loginPage = new LoginPage(driver);
         loginPage.Login(properties.getProperty("name"),properties.getProperty("pass"));
     }
+    @Test
+    public void TestMethod2() {
+        System.out.println("In test method2");
+    }
 }
