@@ -3,6 +3,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -33,6 +35,8 @@ public class BaseTest {
     public void init() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+//        driver = new FirefoxDriver();
+//        driver = new EdgeDriver();
         properties = loadProperties();
         driver.manage().window().maximize();
         driver.get(properties.getProperty("url"));
