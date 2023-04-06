@@ -13,4 +13,9 @@ public class LoginTest extends BaseTest{
     public void TestMethod2() {
         System.out.println("In test method2");
     }
+
+    @Test
+    public void TestMethod3() {
+        System.out.println("In test method3");
+    }
 }
